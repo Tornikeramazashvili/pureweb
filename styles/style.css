@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@400;800&display=swap");
+
+/* Css codes that resets default properties */
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  font-family: "Noto Sans Georgian", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+textarea,
+button,
+select {
+  font: inherit;
+}
+
+/* Header */
+
+header {
+  background-color: #1a1e1f;
+  transition: background-color 0.3s ease; /* Smooth transition effect */
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+.header-container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+  align-items: center;
+  padding: 7px 20px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-branding {
+  font-size: 2rem;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 46px;
+}
+
+.nav-link {
+  transition: 0.3s ease-out;
+}
+
+.nav-link:hover {
+  color: dodgerblue;
+}
+
+.nav-item.active .nav-link {
+  color: dodgerblue;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-color: white;
+}
+
+/* Media queries */
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #1a1e1f;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .nav-item {
+    margin: 16px 0;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+}
+
+/* Main */
