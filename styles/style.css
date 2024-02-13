@@ -113,7 +113,7 @@ a {
   font-size: 14px;
 }
 
-/* Main */
+/* Main hero section */
 
 .main-hero-section {
   background-image: url("../assets/images/hero-section-wallpaper.webp");
@@ -148,4 +148,43 @@ a {
   font-weight: 700;
   color: white;
   cursor: default;
+}
+
+/* Main description section */
+
+.main-description-section {
+  background-color: #2b2b2b;
+}
+
+.main-inner-description-section {
+  max-width: 1024px;
+  padding: 50px 20px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 40px;
+}
+
+.main-description-section-title {
+  margin: 0 auto;
+  font-size: 28px;
+  color: white;
+  cursor: default;
+  line-height: 46px;
+}
+
+.main-description-section-btn {
+  color: dodgerblue;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.main-description-section-btn:hover {
+  color: white;
+  transition: 0.4s;
 }
