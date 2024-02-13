@@ -34,3 +34,70 @@
   }
 }
 
+@media (max-width: 800px) {
+  .main-courses-images-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 712px) {
+  .main-description-section-title {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .header-nav-container {
+    margin: 0 auto;
+  }
+  .header-nav li a {
+    font-size: 16px;
+  }
+  .main-intro-section-title-container {
+    text-align: left;
+  }
+
+  .main-intro-section-title-subtitle {
+    font-size: 26px;
+    margin-top: 6px;
+  }
+  .main-descr-section-par-container,
+  .main-courses-section {
+    text-align: left;
+  }
+
+  .main-courses-section-title {
+    padding: 0px 0px 40px 0px;
+  }
+
+  .main-courses-images-container {
+    grid-template-columns: 1fr;
+  }
+
+  .main-courses-each-image-container {
+    width: 100%;
+  }
+
+  .main-courses-images-inner-container-title {
+    font-size: 26px;
+  }
+
+  .main-courses-images-inner-container-subtitle {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+
+  .main-courses-images-inner-container-course-details {
+    justify-content: left;
+  }
+
+  .main-courses-images-inner-container-course-details {
+    margin-top: 60px;
+  }
+
+  .course-details {
+    font-size: 20px;
+  }
+
+  .main-courses-image {
+    width: 100%;
+  }
+}
