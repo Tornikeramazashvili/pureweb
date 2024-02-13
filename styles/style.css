@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@400;800&display=swap");
 
-/* Css codes that resets default properties */
+/* Reset CSS*/
 
 * {
   margin: 0;
@@ -14,6 +14,10 @@
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -40,27 +44,18 @@ select {
 
 header {
   background-color: #1a1e1f;
-  transition: background-color 0.3s ease; /* Smooth transition effect */
+  transition: background-color 0.3s ease;
   position: sticky;
   top: 0;
   width: 100%;
 }
 
-.header-container {
+.header-inner-container {
   max-width: 1024px;
   width: 100%;
   margin: 0 auto;
   align-items: center;
   padding: 7px 20px;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  color: white;
-  text-decoration: none;
 }
 
 .navbar {
@@ -78,7 +73,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 46px;
+  gap: 54px;
 }
 
 .nav-link {
@@ -108,42 +103,49 @@ a {
   background-color: white;
 }
 
-/* Media queries */
+li {
+  list-style: none;
+}
 
-@media (max-width: 768px) {
-  .hamburger {
-    display: block;
-  }
-
-  .hamburger.active .bar:nth-child(2) {
-    opacity: 0;
-  }
-  .hamburger.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-  }
-  .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-  }
-
-  .nav-menu {
-    position: fixed;
-    left: -100%;
-    top: 70px;
-    gap: 0;
-    flex-direction: column;
-    background-color: #1a1e1f;
-    width: 100%;
-    text-align: center;
-    transition: 0.3s;
-  }
-
-  .nav-item {
-    margin: 16px 0;
-  }
-
-  .nav-menu.active {
-    left: 0;
-  }
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
 }
 
 /* Main */
+
+.main-hero-section {
+  background-image: url("../assets/images/hero-section-wallpaper.webp");
+  width: 100%;
+  min-height: 352px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.main-inner-hero-section {
+  max-width: 1024px;
+  padding: 0px 20px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 18px;
+}
+
+.main-inner-hero-section-title {
+  font-size: 42px;
+  font-weight: 700;
+  color: white;
+  cursor: default;
+}
+
+.main-inner-hero-section-subtitle {
+  font-size: 34px;
+  font-weight: 700;
+  color: white;
+  cursor: default;
+}
