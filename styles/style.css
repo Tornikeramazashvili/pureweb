@@ -173,10 +173,10 @@ a {
 
 .main-description-section-title {
   margin: 0 auto;
-  font-size: 28px;
+  font-size: 24px;
   color: white;
   cursor: default;
-  line-height: 46px;
+  line-height: 42px;
 }
 
 .main-description-section-btn {
@@ -242,7 +242,7 @@ a {
 }
 
 .main-courses-images-inner-container-subtitle {
-  font-size: 14px;
+  font-size: 15px;
   color: whitesmoke;
   cursor: default;
   margin-top: 30px;
@@ -279,6 +279,7 @@ a {
 }
 
 .course-details {
+  font-size: 15px;
   color: #08a3e0;
   text-decoration: none;
   margin-left: 10px;

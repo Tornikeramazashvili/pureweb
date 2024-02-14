@@ -40,9 +40,9 @@
   }
 }
 
-@media (max-width: 712px) {
+@media (max-width: 600px) {
   .main-description-section-title {
-    font-size: 22px;
+    font-size: 20px;
     line-height: 32px;
   }
   .header-nav-container {
@@ -77,12 +77,12 @@
   }
 
   .main-courses-images-inner-container-title {
-    font-size: 26px;
+    font-size: 22px;
   }
 
   .main-courses-images-inner-container-subtitle {
     margin-top: 20px;
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .main-courses-images-inner-container-course-details {
@@ -101,3 +101,30 @@
     width: 100%;
   }
 }
+
+@media (max-width: 375px) {
+  .main-inner-hero-section-subtitle {
+    font-size: 30px;
+  }
+  .main-description-section-title {
+    font-size: 20px;
+  }
+  .main-courses-images-inner-container-title {
+    font-size: 20px;
+  }
+  .main-courses-images-inner-container-subtitle,
+  .course-details {
+    font-size: 16px;
+  }
+  .main-courses-section-title{
+    font-size: 20px;
+  }
+  .main-description-section-btn {
+    font-size: 18px;
+  }
+  .main-inner-hero-section-subtitle {
+    font-size: 30px;
+  }
+}
+
+
