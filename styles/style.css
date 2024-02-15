@@ -120,7 +120,7 @@ a {
 /* Main hero section */
 
 .main-hero-section {
-  background-image: url("../assets/images/hero/hero-section-wallpaper.webp");
+  background-image: url("../assets/images/hero/tbc-team.webp");
   width: 100%;
   min-height: 352px;
   background-position: center;
@@ -351,7 +351,6 @@ a {
 }
 
 .main-accordion-title-container {
-  
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -418,7 +417,7 @@ a {
   line-height: 30px;
 }
 
-.accordion-paragraph-bold{
+.accordion-paragraph-bold {
   font-weight: 600;
 }
 
@@ -434,4 +433,64 @@ a {
 
 .active .icon {
   transform: rotate(180deg);
+}
+
+/* Footer */
+
+.footer-section {
+  background-color: #1a1e1f;
+}
+
+.footer-container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px 20px 40px 20px;
+}
+
+.footer-tbc-logo {
+  width: 106px;
+}
+
+.footer-logos,
+.footer-social-links-contaner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-social-links {
+  margin-left: 10px;
+  width: 40px;
+}
+
+.footer-all-rights-reserved-container {
+  margin: 14px 0px;
+}
+
+.footer-all-rights-reserved,
+.footer-terms-and-conditions {
+  color: whitesmoke;
+  cursor: default;
+}
+
+.footer-terms-and-conditions-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-contact-btn {
+  background-color: #00aef3;
+  padding: 6px 30px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: whitesmoke;
+}
+
+.footer-contact-btn:hover {
+  transition: 0.4s;
+  background-color: #d5d5d5;
+  color: black;
 }

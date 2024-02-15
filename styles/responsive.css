@@ -141,6 +141,18 @@
 }
 
 @media (max-width: 425px) {
+  .main-inner-hero-section {
+    row-gap: 10px;
+  }
+  .main-inner-hero-section-subtitle {
+    font-size: 30px;
+  }
+  .main-inner-hero-section-title {
+    font-size: 36px;
+  }
+  .course-details {
+    font-size: 16px;
+  }
   .main-accordion-all-question {
     display: none;
   }
@@ -150,5 +162,19 @@
   .main-sider-section-title,
   .main-accordion-title {
     font-size: 20px;
+  }
+  .footer-all-rights-reserved {
+    font-size: 14px;
+  }
+
+  .footer-terms-and-conditions {
+    font-size: 14px;
+  }
+  .footer-contact-btn {
+    font-size: 14px;
+  }
+  .footer-terms-and-conditions,
+  .footer-social-links-contaner {
+    display: none;
   }
 }
