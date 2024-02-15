@@ -116,7 +116,7 @@
   .course-details {
     font-size: 16px;
   }
-  .main-courses-section-title{
+  .main-courses-section-title {
     font-size: 20px;
   }
   .main-description-section-btn {
@@ -127,4 +127,28 @@
   }
 }
 
+@media (max-width: 600px) {
+  .main-accordion-all-question {
+    display: none;
+  }
+  .accordion-header {
+    font-size: 16px;
+  }
+  .main-accordion-title,
+  .main-courses-section-title {
+    font-size: 22px;
+  }
+}
 
+@media (max-width: 425px) {
+  .main-accordion-all-question {
+    display: none;
+  }
+  .accordion-header {
+    font-size: 14px;
+  }
+  .main-sider-section-title,
+  .main-accordion-title {
+    font-size: 20px;
+  }
+}
