@@ -50,9 +50,10 @@ header {
   width: 100%;
 }
 
-.header-transparent {
-  background-color: #1a1e1f;
+.header-transparent{
+  background-color: #1a1e1ff2;
 }
+
 
 .header-inner-container {
   max-width: 1024px;
@@ -78,6 +79,10 @@ header {
   justify-content: space-between;
   align-items: center;
   gap: 54px;
+}
+
+.nav-menu.active{
+  background-color: #1a1e1ff2;
 }
 
 .nav-link {
