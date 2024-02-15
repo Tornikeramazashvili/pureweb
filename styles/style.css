@@ -120,7 +120,7 @@ a {
 /* Main hero section */
 
 .main-hero-section {
-  background-image: url("../assets/images/hero-section-wallpaper.webp");
+  background-image: url("../assets/images/hero/hero-section-wallpaper.webp");
   width: 100%;
   min-height: 352px;
   background-position: center;
@@ -283,4 +283,148 @@ a {
   color: #08a3e0;
   text-decoration: none;
   margin-left: 10px;
+}
+
+/* Slider */
+
+.main-slider-section {
+  background-color: #2b2b2b;
+}
+
+.main-slider-container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 55px 20px;
+}
+
+.display-area {
+  max-width: 1024px;
+  width: 100%;
+  overflow-x: hidden;
+  margin: auto;
+  display: flex;
+}
+
+.dots-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin: 20px 0px 0px 0px;
+}
+
+.dot {
+  border: none;
+  background: whitesmoke;
+  width: 8px;
+  height: 8px;
+  margin: 6px;
+
+  border-radius: 999px;
+  outline: none;
+}
+
+.dot:hover,
+.dot.active {
+  background: whitesmoke;
+  cursor: pointer;
+}
+
+.arrow {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/*  */
+
+.main-accordion-section {
+  background-color: #161616;
+  padding: 80px 0px;
+}
+
+.main-accordion-container {
+  max-width: 770px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main-accordion-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-accordion-title {
+  font-size: 24px;
+  color: whitesmoke;
+  cursor: default;
+}
+
+.main-accordion-all-question {
+  font-size: 20px;
+  font-weight: 800;
+  color: #08a3e0;
+  cursor: pointer;
+}
+
+.main-accordion-all-question:hover {
+  transition: 0.4s;
+  color: #dbdbdb;
+}
+
+/* Accordion */
+
+.accordion-container {
+  width: 100%;
+  max-width: 770px;
+  margin-top: 20px;
+}
+
+.accordion-item {
+  border-bottom: 0.5px solid rgba(245, 245, 245, 0.181);
+  padding: 30px 0px 20px 0px;
+}
+
+.accordion-header {
+  color: whitesmoke;
+  font-size: 18px;
+  border: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+}
+
+.accordion-content {
+  padding: 20px 0px 0px 0px;
+  color: whitesmoke;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease;
+}
+
+.accordion-content {
+  font-size: 13px;
+}
+
+.accordion-paragraph {
+  padding: 0px 20px;
+  line-height: 30px;
+}
+
+.accordion-paragraph-special {
+  padding-bottom: 20px;
+  line-height: 26px;
+}
+
+.icon {
+  transition: transform 0.3s ease;
+}
+
+.active .icon {
+  transform: rotate(180deg);
 }
