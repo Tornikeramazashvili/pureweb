@@ -14,6 +14,7 @@
     />
   </head>
   <body>
+    <!-- Header -->
     <header id="header">
       <div class="header-inner-container">
         <nav class="navbar">
@@ -149,6 +150,7 @@
         </nav>
       </div>
     </header>
+    <!-- Main -->
     <main>
       <section class="main-hero-section">
         <div class="main-inner-hero-section">
@@ -601,11 +603,8 @@
       <section class="main-slider-section">
         <div class="main-slider-container">
           <h3 class="main-sider-section-title">პროექტის პარტნიორები</h3>
-          <div style="display: flex; align-items: center">
-            <button
-              class="arrow left"
-              style="display: flex; justify-content: center"
-            >
+          <div class="main-slider-inner-container">
+            <button class="arrow left" onclick="plusSlides(-1)">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="40"
@@ -618,12 +617,55 @@
                 ></path>
               </svg>
             </button>
-            <!-- Slider goes here -->
-            <!-- Slider goes here -->
-            <button
-              class="arrow right"
-              style="display: flex; justify-content: center"
-            >
+            <div class="slideshow-container">
+              <div class="mySlides fade">
+                <div class="mySlides-images-container">
+                  <img
+                    class="slideshow-images"
+                    src="assets/images/slider/usaid.webp"
+                    alt="USAID"
+                  />
+                  <img
+                    class="slideshow-images"
+                    src="assets/images/slider/space-int.webp"
+                    alt="Space international"
+                  />
+                  <img
+                    class="slideshow-images"
+                    src="assets/images/slider/tinet.webp"
+                    alt="TINET"
+                  />
+                </div>
+              </div>
+              <div class="mySlides fade">
+                <div class="mySlides-images-container">
+                  <img
+                    class="slideshow-images"
+                    src="assets/images/slider/tegeta-holding.webp"
+                    alt="Tegeta Holding"
+                  />
+                  <img
+                    class="slideshow-images"
+                    src="assets/images/slider/spectre.webp"
+                    alt="Spectre"
+                  />
+                  <img
+                    class="slideshow-images"
+                    src="assets/images/slider/tbc-lising.webp"
+                    alt="TBC lising"
+                  />
+                </div>
+              </div>
+              <div class="mySlides fade">
+                <div class="mySlides-images-container"></div>
+                <img
+                  class="slideshow-images"
+                  src="assets/images/slider/ufc.webp"
+                  alt="UFC"
+                />
+              </div>
+            </div>
+            <button class="arrow right" onclick="plusSlides(1)">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="40"
@@ -638,10 +680,11 @@
               </svg>
             </button>
           </div>
-          <div class="dots-wrapper">
-            <button class="dot active"></button>
-            <button class="dot"></button>
-            <button class="dot"></button>
+
+          <div class="dots-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
           </div>
         </div>
       </section>
@@ -762,6 +805,7 @@
         </div>
       </div>
     </section>
+    <!-- Footer -->
     <footer>
       <section class="footer-section">
         <div class="footer-container">
